@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Ex.</title>
+    <style>
+        #btn{
+            border: none;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .js-odd{
+            background-color: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .js-even{
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 id="greeting"></h3>
+        <button id="btn" onclick="press();"></button>
+    </div>
+    <script>
+        function call(personName){
+            let date = new Date ();
+            let hour = date.getHours();
+            if (hour > 5 && hour < 12) {
+                document.getElementById("greeting").innerHTML = `Good Morning 
+                ${personName}`;
+            } else if (hour > 12 && hour < 17) {
+                document.getElementById("greeting").innerHTML = `Good Afternoon 
+                ${personName}`;
+            } else {
+                document.getElementById("greeting").innerHTML = `Good Evening 
+                ${personName}`;
+            }
+        }
+        call("Dear");
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

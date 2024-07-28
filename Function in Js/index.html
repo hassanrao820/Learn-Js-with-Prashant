@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JavaScript</title>
+</head>
+<body>
+    <h1>Function in Js</h1>
+    <hr>
+    <b>Bat Ball Stump Game</b>
+    <button onclick="
+    let computerChoice= generateComputerChoice();
+        let resultMsg = getResult('Bat', computerChoice);
+       showResult('Bat', computerChoice, resultMsg);
+    ">Bat</button>
+        <button onclick="
+        computerChoice = generateComputerChoice();
+        resultMsg = getResult('Ball', computerChoice);
+
+        showResult('Ball', computerChoice, resultMsg);
+
+    ">Ball</button>
+    <button onclick="
+        computerChoice= generateComputerChoice();
+        resultMsg = getResult('Stump', computerChoice);
+
+        showResult('Stump', computerChoice, resultMsg);
+
+        ">Stump</button>
+    <hr>
+    <h3>Drive Status:-</h3>
+    <p id="status"></p>
+    <hr>
+    <h3>Your Percentage</h3>
+    <p id="percentage"></p>
+    <hr>
+
+
+    <!--* Main Js  -->
+
+    <script src="script.js"></script>
+
+    <!-- //! Return statement in Function -->
+    <script>
+        function randomMove(){
+            let randomNumber = Math.random();
+            random = randomNumber * 10;
+            return random;
+        }
+        console.log(randomMove());
+        console.log(randomMove());
+        console.log(randomMove());
+        console.log(randomMove());
+    </script>
+
+    <!-- ! Drive status in Js Function  -->
+        <script>
+            function driveStatus(){
+                let status = prompt('What is your drive status.? Good or Bad?');
+                if (status === 'Good'){
+                    alert('You are good to drive');
+                } else if (status === 'Bad'){
+                    alert('You are not good to drive');
+                } else {
+                    alert('You have not entered a valid drive status');
+                }
+                document.getElementById('status').innerHTML = `Your drive status is ${status}`;
+            }
+            driveStatus()
+    </script>
+
+    <!--! Drive status using return statement in Js function  -->
+    <script>
+        function statusDrive(){
+            let age = prompt('Enter your age');
+
+            if (age > 18){
+                alert('You can drive');
+                return 'You can drive'
+            } else {
+                alert('You can\'t drive');
+                return 'You can\'t drive'
+            }
+        }
+        console.log(statusDrive());
+    </script>
+    <!-- ! Parameters in Js Function -->
+
+    <script>
+        function average(c,b,a) {
+            let percentage = c / b * a;
+            console.log(percentage);
+            document.getElementById('percentage').innerHTML = `Your percentage is ${percentage}`;
+        }
+        average(960 , 1100 , 100);
+
+        // Another Example
+        function greeting(name){
+            console.log(`Hello ${name}`);
+        }
+        greeting(prompt('Enter your name'));
+    </script>
+</body>
+</html>

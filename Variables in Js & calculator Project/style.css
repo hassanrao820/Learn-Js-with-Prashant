@@ -1,0 +1,99 @@
+#display-calculator{
+    border: 1px solid rgb(205, 197, 197);
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+#calculator-label{
+    font-size: 2rem;
+    font-family: "Urbanist", sans-serif;
+}
+#display-input{
+    margin: .7rem .4rem;
+    width: 90%;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.display-btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#C{
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+#plus{
+    background-color: green;
+    color: azure;
+    border: none;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+#minus{
+    background-color: green;
+    color: azure;
+    border: none;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+#mul{
+    background-color: green;
+    color: azure;
+    border: none;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+#div{
+    background-color: green;
+    color: azure;
+    border: none;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+.button{
+    width: 3.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.5rem;
+    margin: .3rem;
+    cursor: pointer;
+}
+#equal-to{
+    background-color: black;
+    color: whitesmoke;
+    width: 7.5rem;
+    border: none;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}

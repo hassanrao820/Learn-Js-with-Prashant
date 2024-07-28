@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    
+    <script>
+        let no = [1,2,3,4,5,6,7,8,9,10];
+        console.log(no);
+        console.log(no[0]);
+        console.log(no[2]);
+        console.log(no[6]); 
+        console.log(no.length) // to check the length of array length.
+
+        let no1 = [1, true, 'Hassan', null];
+        console.log(no1);
+        console.log(no1[0]);
+        console.log(no1[1]);
+        console.log(no1[2]);
+        console.log(no1[3]);
+
+        // Push & POP in array
+        let ary = [1, 3, 5];
+        ary.push(7); // adding element in the end
+        console.log(ary);
+        ary.pop(); // removing element from the end
+        console.log(ary);
+
+        // Shift in array
+        let ary1 = [1, 3, 5];
+        ary1.shift(); // removing element in the start
+        console.log(ary1);
+        
+        // Unshift in array
+        let ary3 = [2, 4, 5];
+        ary3.unshift(9, 12 , 16); // adding elements in the start.
+        console.log(ary3);
+
+        // Splice in array
+        let ary2 = [1, 3, 5, 7, 9];
+        ary2.splice(1, 2); // removing element between the array
+        console.log(ary2);
+
+        // toString in array
+        let ary4 = [1, 3, 5, 7, 9];
+        console.log(ary4.toString());
+
+        // sort in array
+        let ary5 = [30, 14, 10, 11, 12, 70, 90];
+        ary5.sort(); // sorting the array
+        console.log(ary5);
+
+        let ary6 = [9, 2, 7, 3, 8, 4, 6, 5, 1];
+        ary5.sort(); // sorting the array
+        console.log(ary6);
+
+        let ary7 = [9, 2, 7, 3, 8, 4, 6, 5, 1];
+        ary7.sort(); // sorting the array in place
+        console.log(ary7); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        // Value of
+        let ary8 = [9, 2, 7, 3, 8, 4, 6, 5, 1];
+        console.log(ary8); // Output: [9, 2, 7, 3, 8, 4, 6, 5, 1]
+        console.log(ary8.valueOf()); // Output: [9, 2, 7, 3, 8, 4, 6, 5, 1] // it can be used to make the copy of array.
+
+
+        // array also use reference like object
+        let ary9 = [9, 2, 7, 3, 8, 4, 6, 5, 1];
+        let ary10 = ary9;
+        ary10[0] = 100;
+        ary10[1] = 101;
+        console.log(ary9); // Output: [100, 101, 7, 3, 8, 4, 6, 5, 1]
+
+        // De-structure in array 
+        let ary11 = [9, 2, 7, 3];
+        let [a, b, c, d] = ary11;
+        console.log(a + " " + b + " " + c + " " + "" + d);
+    </script>
+</body>
+</html>
